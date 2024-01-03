@@ -8,6 +8,7 @@ function FindProxyForURL(url, host) {
 //    if (DOMAINS.some(d => host?.includes(d))) {
 //        return PROXY;
 //    }
-    return "DIRECT";
+//    return "DIRECT";
+  return PROXY;
 }
 
