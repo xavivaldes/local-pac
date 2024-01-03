@@ -1,7 +1,7 @@
 const PROXY = "PROXY 127.0.0.1:25345"
 const DOMAINS = [
   "fivetran.com",
-  "whatismyipaddress.com",
+  "openai.com",
 ];
 
 function FindProxyForURL(url, host) {
