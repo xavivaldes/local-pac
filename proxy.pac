@@ -1,4 +1,4 @@
-const PROXY = "SOCKS5 127.0.0.1:1280" 
+const PROXY = "SOCKS5 127.0.0.1:25344"
 const DOMAINS = [
   "fivetran.com",
   "whatismyipaddress.com",
