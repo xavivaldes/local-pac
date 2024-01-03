@@ -1,4 +1,3 @@
-// const PROXY = "SOCKS5 127.0.0.1:25344"
 const PROXY = "PROXY 127.0.0.1:25345"
 const DOMAINS = [
   "fivetran.com",
@@ -6,10 +5,9 @@ const DOMAINS = [
 ];
 
 function FindProxyForURL(url, host) {
-//    if (DOMAINS.some(d => host?.includes(d))) {
-//        return PROXY;
-//    }
-//    return "DIRECT";
-  return PROXY;
+  if (DOMAINS.some(d => host?.includes(d))) {
+    return PROXY;
+  }
+  return "DIRECT";
 }
 
